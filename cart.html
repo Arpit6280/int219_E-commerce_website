@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  body{
+    background-color: aqua;
+   
+  }
+</style>
+
+<body>
+    <!-- header section starts  -->
+   
+<header id="header" class="fixed-top">
+
+    <div class="fas fa-bars"></div>
+    
+    <a href="#" class="logo"><i class="fas fa-shopping-bag"></i><h1>shopping</h1></a>
+    
+    <div class="left">
+    
+      <div class="search-container">
+        <label for="search" class="fas fa-search"></label>
+        <input type="search" placeholder="search" id="search">
+      </div>
+    
+      <div class="fas fa-shopping-cart" style="background-color: rgb(0, 38, 255); border: 2px solid black; padding: 3px; border-radius: 4px;"> <span>0</span> </div>
+
+    
+    </div>
+    
+    <!-- navbar  -->
+    
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="#product">product</a></li>
+        <li><a href="#review">review</a></li>
+        <li><a href="#offer">offer</a></li>
+        <li><a href="#newsletter">newsletter</a></li>
+      </ul>
+    </nav>
+    
+    </header>
+    
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="prices">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+
+        </div>
+    </div>
+     
+
+   <section class="address">
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-6">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Arpit" required>
+      
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Yadav" required>
+      
+    </div>
+    <div class="col-md-12">
+      <label for="validationCustomUsername" class="form-label">Address</label>
+      <div class="input-group has-validation">
+        
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom04" class="form-label">Pincode</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom04" class="form-label">State</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      
+    </div>
+    <div class="col-md-6">
+      <label for="validationCustom05" class="form-label">Country</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      
+    </div>
+    
+
+    <div class="col-4">
+      <button ></button>
+    </div>
+
+    <div class="col-4">
+      <a>
+      <button class="btn btn-primary submit" type="submit" style="text-align: center;">PLACE ORDER</button></a>
+    </div>
+    <div class="col-4">
+      <button></button>
+    </div>
+  </form>
+</section>
+
+  
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
